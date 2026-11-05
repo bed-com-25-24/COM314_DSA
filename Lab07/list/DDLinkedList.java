@@ -26,14 +26,14 @@ public class DDLinkedList<E> implements List<E> {
          }
     public void setPos(int pos) {
         if (pos < 0 || pos >= count)
-         throw new IndexOutOfBoundsException("invalid list position");
-        curr = head; 
-        for (int i=0; i<pos; i++) 
-        curr = curr.next();
+            throw new IndexOutOfBoundsException("invalid list position");
+            curr = head; 
+            for (int i=0; i<pos; i++) 
+                curr = curr.next();
     }
     public void setValue(E val) {
          if (curr == null)
-          throw new IllegalStateException("invalid list position"); 
+            throw new IllegalStateException("invalid list position"); 
             curr.setElement(val);
           }
     public E currValue() {
@@ -80,7 +80,8 @@ public class DDLinkedList<E> implements List<E> {
         else
             tail = p;
             curr = n; 
-            count--; return value;
+            count--; 
+            return value;
     }
     public void append(E item) {
         DLinkNode<E> n = new DLinkNode<E>(item, null, tail);

@@ -12,7 +12,9 @@ public class LinkedStack<E> implements Stack<E> {
           }
     public E pop() {
         if (isEmpty()) throw new IllegalStateException("Empty stack");
-        E value = top.element(); top = top.next(); return value;
+        E value = top.element(); 
+        top = top.next(); 
+        return value;
     }
     public boolean isEmpty() {
          return top == null;

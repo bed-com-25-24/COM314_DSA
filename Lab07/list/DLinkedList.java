@@ -1,4 +1,4 @@
-// Doubly linked list using a dummy head and curr as predecessor, following Lecture 05.
+
 public class DLinkedList<E> implements List<E> {
     private DLinkNode<E> head, tail, curr;
     private int count;

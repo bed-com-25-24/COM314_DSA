@@ -4,7 +4,9 @@ public class DLinkNode<E> {
     private DLinkNode<E> prev;
 
     public DLinkNode(E elem, DLinkNode<E> nxt, DLinkNode<E> prv) {
-        element = elem; next = nxt; prev = prv;
+        element = elem; 
+        next = nxt; 
+        prev = prv;
     }
     public DLinkNode<E> next() {
          return next;

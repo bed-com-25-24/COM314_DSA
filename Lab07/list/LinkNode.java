@@ -2,7 +2,8 @@ public class LinkNode<E> {
     private E element;
     private LinkNode<E> next;
     public LinkNode(E elem, LinkNode<E> nextNode) {
-         element = elem; next = nextNode; 
+         element = elem; 
+         next = nextNode; 
          }
     public LinkNode(LinkNode<E> nextNode) {
          next = nextNode; 
